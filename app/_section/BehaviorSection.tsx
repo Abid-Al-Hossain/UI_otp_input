@@ -34,7 +34,6 @@ export default function BehaviorSection({ state, update }: Props) {
   "search",
   "send"
 ]} onChange={(value) => update("enterKeyHint", value)} />
-      <Switch label="Motion safe transition" checked={state.motion} onChange={(value) => update("motion", value)} />
     </SectionCard>
   );
 }

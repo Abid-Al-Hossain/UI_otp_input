@@ -2,6 +2,25 @@
 
 import { Fragment, useEffect, useRef, useState, type CSSProperties, type ClipboardEvent, type ChangeEvent, type KeyboardEvent } from "react";
 import type { OtpInputState } from "../types";
+import { SYSTEM_FONTS } from "@/components/shared/typography/fontConstants";
+
+function resolveFont(state: { fontBucket: "system" | "google"; googleFontFamily: string; systemFontIdx: number }): string {
+  return state.fontBucket === "google"
+    ? `"${state.googleFontFamily}", sans-serif`
+    : (SYSTEM_FONTS[state.systemFontIdx]?.css ?? "inherit");
+}
+
+function buildShadow(state: { shadowEnabled: boolean; shadowX: number; shadowY: number; shadowBlur: number; shadowSpread: number; shadowColor: string; shadowOpacity: number }): string {
+  if (!state.shadowEnabled) return "none";
+  const hex = Math.round(state.shadowOpacity * 255).toString(16).padStart(2, "0");
+  return `${state.shadowX}px ${state.shadowY}px ${state.shadowBlur}px ${state.shadowSpread}px ${state.shadowColor}${hex}`;
+}
+
+function buildRadius(state: { radiusLinked: boolean; radius: number; radiusTL: number; radiusTR: number; radiusBR: number; radiusBL: number }): string {
+  return state.radiusLinked
+    ? `${state.radius}px`
+    : `${state.radiusTL}px ${state.radiusTR}px ${state.radiusBR}px ${state.radiusBL}px`;
+}
 
 function sanitizeOtpValue(raw: string, characterMode: OtpInputState["characterMode"], digitCount: number) {
   return (raw.match(characterMode === "numeric" ? /\d/g : /[a-z0-9]/gi) ?? [])
@@ -22,15 +41,20 @@ function shellStyle(state: OtpInputState): CSSProperties {
     minHeight: state.height,
     padding: state.padding,
     gap: state.gap,
-    borderRadius: state.radius,
+    borderRadius: buildRadius(state),
     border: `${state.borderWidth}px solid ${invalid ? "#fb7185" : state.previewState === "focus" ? state.accent : state.border}`,
-    boxShadow: `0 ${Math.round(state.shadow / 3)}px ${state.shadow}px rgba(0,0,0,.28)`,
+    boxShadow: buildShadow(state),
     background: state.background,
     color: state.foreground,
-    fontFamily: state.fontFamily,
+    fontFamily: resolveFont(state),
+    fontStyle: state.fontStyle,
+    textTransform: state.textTransform,
+    textDecoration: state.textDecoration,
+    letterSpacing: `${state.letterSpacing}${state.letterSpacingUnit}`,
+    lineHeight: state.lineHeight,
     opacity: state.disabled || state.previewState === "disabled" ? 0.55 : 1,
     outline: state.previewState === "focus" ? `${state.focusRing}px solid ${state.accent}` : "none",
-    transition: state.motion ? "all 180ms ease" : "none",
+    transition: state.transitionDuration > 0 ? "all 180ms ease" : "none",
   };
 }
 
