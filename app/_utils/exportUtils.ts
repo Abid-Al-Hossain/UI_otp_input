@@ -18,6 +18,9 @@ export function buildReactCode(state: OtpInputState) {
   return `import { Fragment, useEffect, useRef, useState } from "react";
 
 const state = ${JSON.stringify(state, null, 2)};
+function resolveFont(s) { return s.fontBucket === "google" ? '"' + s.googleFontFamily + '", sans-serif' : "inherit"; }
+function buildShadow(s) { if (!s.shadowEnabled) return "none"; var hex = Math.round(s.shadowOpacity * 255).toString(16).padStart(2, "0"); return s.shadowX + "px " + s.shadowY + "px " + s.shadowBlur + "px " + s.shadowSpread + "px " + s.shadowColor + hex; }
+
 
 function sanitizeOtpValue(raw, characterMode, digitCount) {
   return (raw.match(characterMode === "numeric" ? /\\d/g : /[a-z0-9]/gi) ?? [])
@@ -50,14 +53,14 @@ export default function OtpInputComponent() {
     padding: state.padding,
     gap: state.gap,
     borderRadius: state.radius,
-    border: \`\${state.borderWidth}px solid \${invalid ? "#fb7185" : state.previewState === "focus" ? state.accent : state.border}\`,
+    border: \`\${state.borderWidth}px ${state.borderStyle} \${invalid ? state.errorColor : state.previewState === "focus" ? state.accent : state.border}\`,
     boxShadow: \`0 \${Math.round(state.shadow / 3)}px \${state.shadow}px rgba(0,0,0,.28)\`,
     background: state.background,
     color: state.foreground,
-    fontFamily: state.fontFamily,
+    fontFamily: resolveFont(state),
     opacity: disabled ? 0.55 : 1,
     outline: state.previewState === "focus" ? \`\${state.focusRing}px solid \${state.accent}\` : "none",
-    transition: state.transitionDuration > 0 ? "$1" : "none",
+    transition: state.transitionDuration > 0 ? "all " + state.transitionDuration + "ms " + state.transitionEasing : "none",
   };
 
   useEffect(() => {
@@ -119,7 +122,7 @@ export default function OtpInputComponent() {
               aria-describedby={describedBy}
               autoFocus={state.previewState === "focus" && index === 0}
               className="h-12 w-11 rounded-xl border bg-white/10 text-center outline-none"
-              style={{ borderColor: invalid ? "#fb7185" : state.previewState === "focus" && index === 0 ? state.accent : state.border, color: state.foreground, fontSize: state.inputSize }}
+              style={{ borderColor: invalid ? state.errorColor : state.previewState === "focus" && index === 0 ? state.accent : state.border, color: state.foreground, fontSize: state.inputSize }}
               onChange={(event) => writeDigits(index, event.target.value)}
               onPaste={(event) => {
                 event.preventDefault();
@@ -136,7 +139,7 @@ export default function OtpInputComponent() {
         ))}
       </div>
       <small id={helperId} style={{ color: state.muted }}>{state.characterMode === "numeric" ? "Numbers only" : "Letters and numbers"}; paste fills the remaining cells.</small>
-      <small id={statusId} style={{ color: invalid ? "#fb7185" : state.showSuccess ? "#22c55e" : state.muted }}>{message}</small>
+      <small id={statusId} style={{ color: invalid ? state.errorColor : state.showSuccess ? state.successColor : state.muted }}>{message}</small>
     </fieldset>
   );
 }

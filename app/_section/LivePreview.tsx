@@ -42,9 +42,9 @@ function shellStyle(state: OtpInputState): CSSProperties {
     padding: state.padding,
     gap: state.gap,
     borderRadius: buildRadius(state),
-    border: `${state.borderWidth}px solid ${invalid ? "#fb7185" : state.previewState === "focus" ? state.accent : state.border}`,
+    border: `${state.borderWidth}px solid ${invalid ? state.errorColor : state.previewState === "focus" ? state.accent : state.border}`,
     boxShadow: buildShadow(state),
-    background: state.background,
+    background: state.disabled && state.disabledUseCustomColors ? state.disabledBg : state.background,
     color: state.foreground,
     fontFamily: resolveFont(state),
     fontStyle: state.fontStyle,
@@ -140,7 +140,7 @@ export default function LivePreview({ state }: { state: OtpInputState }) {
               aria-describedby={describedBy}
               autoFocus={state.previewState === "focus" && index === 0}
               className="h-12 w-11 rounded-xl border bg-white/10 text-center outline-none"
-              style={{ borderColor: invalid ? "#fb7185" : state.previewState === "focus" && index === 0 ? state.accent : state.border, color: state.foreground, fontSize: state.inputSize }}
+              style={{ borderColor: invalid ? state.errorColor : state.previewState === "focus" && index === 0 ? state.accent : state.border, color: state.foreground, fontSize: state.inputSize }}
               onChange={(event) => handleChange(index, event)}
               onPaste={(event) => handlePaste(index, event)}
               onKeyDown={(event) => handleKeyDown(index, event)}
@@ -152,7 +152,7 @@ export default function LivePreview({ state }: { state: OtpInputState }) {
         ))}
       </div>
       <small id={helperId} style={{ color: state.muted }}>{state.characterMode === "numeric" ? "Numbers only" : "Letters and numbers"}; paste fills the remaining cells.</small>
-      <small id={statusId} style={{ color: invalid ? "#fb7185" : state.showSuccess ? "#22c55e" : state.muted }}>{message}</small>
+      <small id={statusId} style={{ color: invalid ? state.errorColor : state.showSuccess ? state.successColor : state.muted }}>{message}</small>
     </fieldset>
   );
 }

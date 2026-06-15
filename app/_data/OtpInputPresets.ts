@@ -73,6 +73,14 @@ export const DEFAULT_OTPINPUT_STATE: OtpInputState = {
   "separator": "dash",
   "required": true,
   "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
+  "errorColor": "#ef4444",
+  "successColor": "#22c55e",
   "readOnly": false,
   "invalid": false
 };
@@ -132,6 +140,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -190,6 +204,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -248,6 +268,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -306,6 +332,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -364,6 +396,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -422,6 +460,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -480,6 +524,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -538,6 +588,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -596,6 +652,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -654,6 +716,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -712,6 +780,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -770,6 +844,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -828,6 +908,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -886,6 +972,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -944,6 +1036,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1002,6 +1100,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1060,6 +1164,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1118,6 +1228,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1176,6 +1292,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1234,6 +1356,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1292,6 +1420,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1350,6 +1484,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1408,6 +1548,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1466,6 +1612,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1524,6 +1676,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1582,6 +1740,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1640,6 +1804,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1698,6 +1868,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1756,6 +1932,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1814,6 +1996,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1872,6 +2060,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1930,6 +2124,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -1988,6 +2188,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2046,6 +2252,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2104,6 +2316,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2162,6 +2380,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2220,6 +2444,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2278,6 +2508,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2336,6 +2572,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2394,6 +2636,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2452,6 +2700,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2510,6 +2764,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2568,6 +2828,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2626,6 +2892,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2684,6 +2956,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2742,6 +3020,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2800,6 +3084,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
@@ -2858,6 +3148,12 @@ export const OTPINPUT_PRESETS: StudioPreset[] = [
       "separator": "dash",
       "required": true,
       "disabled": false,
+  "disabledOpacity": 0.5,
+  "disabledCursor": "not-allowed",
+  "disabledUseCustomColors": false,
+  "disabledBg": "#374151",
+  "disabledText": "#9ca3af",
+  "disabledBorder": "#4b5563",
       "readOnly": false,
       "invalid": false
     }
