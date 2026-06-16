@@ -88,6 +88,12 @@ export type OtpInputState = {
   disabledBorder: string;
   readOnly: boolean;
   invalid: boolean;
+  ariaLabel: string;
+  digitActiveBg: string;
+  digitActiveBorder: string;
+  digitFilledBg: string;
+  digitFilledText: string;
+  caretColor: string;
 };
 
 export type StudioPreset = {

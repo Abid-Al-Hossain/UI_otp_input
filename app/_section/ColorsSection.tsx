@@ -19,6 +19,13 @@ export default function ColorsSection({ state, update }: Props) {
         <ColorControl label="Error" value={state.errorColor} onChange={(v) => update("errorColor", v)} />
         <ColorControl label="Success" value={state.successColor} onChange={(v) => update("successColor", v)} />
       </SectionCard>
+      <SectionCard title="Digit Box States" subtitle="Active (focused) and filled digit box appearance.">
+        <ColorControl label="Active Background" value={state.digitActiveBg} onChange={(v) => update("digitActiveBg", v)} />
+        <ColorControl label="Active Border" value={state.digitActiveBorder} onChange={(v) => update("digitActiveBorder", v)} />
+        <ColorControl label="Filled Background" value={state.digitFilledBg} onChange={(v) => update("digitFilledBg", v)} />
+        <ColorControl label="Filled Text" value={state.digitFilledText} onChange={(v) => update("digitFilledText", v)} />
+        <ColorControl label="Caret Color" value={state.caretColor} onChange={(v) => update("caretColor", v)} />
+      </SectionCard>
     </div>
   );
 }

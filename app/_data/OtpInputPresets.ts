@@ -82,7 +82,13 @@ export const DEFAULT_OTPINPUT_STATE: OtpInputState = {
   "errorColor": "#ef4444",
   "successColor": "#22c55e",
   "readOnly": false,
-  "invalid": false
+  "invalid": false,
+  "ariaLabel": "",
+  "digitActiveBg": "rgba(255,255,255,0.08)",
+  "digitActiveBorder": "#6366f1",
+  "digitFilledBg": "rgba(255,255,255,0.05)",
+  "digitFilledText": "#ffffff",
+  "caretColor": "#6366f1"
 };
 
 export const OTPINPUT_PRESETS: StudioPreset[] = [

@@ -16,6 +16,7 @@ export default function MetadataSection({ state, update }: Props) {
       <Input label="id" value={state.id} onChange={(value) => update("id", value)} />
       <Input label="name" value={state.name} onChange={(value) => update("name", value)} />
       <Input label="title" value={state.title} onChange={(value) => update("title", value)} />
+      <Input label="ariaLabel" value={state.ariaLabel} onChange={(value) => update("ariaLabel", value)} />
       <Slider label="tabIndex" value={state.tabIndex} min={0} max={4} step={1} onChange={(value) => update("tabIndex", value)} />
     </SectionCard>
   );

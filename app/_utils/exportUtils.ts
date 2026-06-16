@@ -40,6 +40,7 @@ export default function OtpInputComponent() {
   const message = invalid ? state.errorText : state.showSuccess ? state.successText : state.showHelper ? state.helper : "";
   const inputRefs = useRef([]);
   const [digits, setDigits] = useState(() => createOtpDigits(state.value, state.characterMode, state.digitCount));
+  const [activeIndex, setActiveIndex] = useState(null);
   const descriptionId = \`\${state.id}-description\`;
   const helperId = \`\${state.id}-helper\`;
   const statusId = \`\${state.id}-status\`;
@@ -96,8 +97,11 @@ export default function OtpInputComponent() {
         {state.label}{state.required ? " *" : ""}
       </legend>
       <p id={descriptionId} className="text-sm" style={{ color: state.muted }}>{state.description}</p>
-      <div className="flex flex-wrap items-center gap-2" role="group" aria-label={state.title}>
-        {digits.map((digit, index) => (
+      <div className="flex flex-wrap items-center gap-2" role="group" aria-label={state.ariaLabel || state.title}>
+        {digits.map((digit, index) => {
+          const isActive = activeIndex === index || (state.previewState === "focus" && index === 0);
+          const isFilled = digit !== "";
+          return (
           <Fragment key={index}>
             <input
               ref={(node) => { inputRefs.current[index] = node; }}
@@ -121,8 +125,16 @@ export default function OtpInputComponent() {
               aria-invalid={invalid || undefined}
               aria-describedby={describedBy}
               autoFocus={state.previewState === "focus" && index === 0}
-              className="h-12 w-11 rounded-xl border bg-white/10 text-center outline-none"
-              style={{ borderColor: invalid ? state.errorColor : state.previewState === "focus" && index === 0 ? state.accent : state.border, color: state.foreground, fontSize: state.inputSize }}
+              className="h-12 w-11 rounded-xl border text-center outline-none"
+              style={{
+                borderColor: invalid ? state.errorColor : isActive ? state.digitActiveBorder : state.border,
+                backgroundColor: isActive ? state.digitActiveBg : isFilled ? state.digitFilledBg : "rgba(255,255,255,0.1)",
+                color: isFilled ? state.digitFilledText : state.foreground,
+                caretColor: state.caretColor,
+                fontSize: state.inputSize,
+              }}
+              onFocus={() => setActiveIndex(index)}
+              onBlur={() => setActiveIndex((current) => (current === index ? null : current))}
               onChange={(event) => writeDigits(index, event.target.value)}
               onPaste={(event) => {
                 event.preventDefault();
@@ -136,7 +148,8 @@ export default function OtpInputComponent() {
               <span aria-hidden="true" style={{ color: state.muted }}>{separatorText}</span>
             ) : null}
           </Fragment>
-        ))}
+          );
+        })}
       </div>
       <small id={helperId} style={{ color: state.muted }}>{state.characterMode === "numeric" ? "Numbers only" : "Letters and numbers"}; paste fills the remaining cells.</small>
       <small id={statusId} style={{ color: invalid ? state.errorColor : state.showSuccess ? state.successColor : state.muted }}>{message}</small>
