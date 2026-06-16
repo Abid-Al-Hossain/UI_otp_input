@@ -13,6 +13,7 @@ type Props = {
 export default function StatesSection({ state, update }: Props) {
   return (
     <SectionCard title="State Preview" subtitle="State Preview controls that are native, preview-honest, and React-export-honest.">
+      <div className="space-y-4">
       <Select label="Preview state" value={state.previewState} options={[
   "default",
   "hover",
@@ -26,6 +27,7 @@ export default function StatesSection({ state, update }: Props) {
 ]} onChange={(value) => update("previewState", value)} />
       <Switch label="Show helper" checked={state.showHelper} onChange={(value) => update("showHelper", value)} />
       <Switch label="Show success" checked={state.showSuccess} onChange={(value) => update("showSuccess", value)} />
+    </div>
     </SectionCard>
   );
 }

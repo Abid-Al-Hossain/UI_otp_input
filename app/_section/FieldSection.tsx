@@ -14,6 +14,7 @@ type Props = {
 export default function FieldSection({ state, update }: Props) {
   return (
     <SectionCard title="Field" subtitle="Field controls that are native, preview-honest, and React-export-honest.">
+      <div className="space-y-4">
       <Input label="Value" value={state.value} onChange={(value) => update("value", value)} />
       <Slider label="Digit count" value={state.digitCount} min={4} max={8} step={1} onChange={(value) => update("digitCount", value)} />
       <Slider label="Group size" value={state.groupSize} min={2} max={4} step={1} onChange={(value) => update("groupSize", value)} />
@@ -31,6 +32,7 @@ export default function FieldSection({ state, update }: Props) {
   "dash",
   "space"
 ]} onChange={(value) => update("separator", value)} />
+    </div>
     </SectionCard>
   );
 }
