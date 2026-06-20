@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ContrastGuard from "@/components/shared/color/ContrastGuard";
 import AppShell from "@/components/shared/layout/AppShell";
 import { PlaygroundLayout } from "@/components/shared/layout/PlaygroundLayout";
 import { useHistoryState } from "@/components/hooks/useHistoryState";
@@ -81,10 +82,10 @@ export default function Page() {
   const headerActions = (
     <UndoRedoButtons undo={undo} redo={redo} reset={handleReset} canUndo={canUndo} canRedo={canRedo} />
   );
-
   return (
     <AppShell contentOverflow="hidden">
       <PlaygroundLayout title="OTP Input Studio" headerActions={headerActions} controls={controls} preview={output} />
-    </AppShell>
+
+<ContrastGuard /></AppShell>
   );
 }
